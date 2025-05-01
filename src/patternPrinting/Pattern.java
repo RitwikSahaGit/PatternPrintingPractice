@@ -13,8 +13,8 @@ public class Pattern {
 //		invertedRightHalfPyramid(4);
 //		System.out.println("leftHalfPyramid");
 //		leftHalfPyramid(4);
-//		System.out.println("revartedLeftHalfPyramid");
-//		revartedLeftHalfPyramid(4);
+		System.out.println("revartedLeftHalfPyramid");
+		revartedLeftHalfPyramid(4);
 //		System.out.println("solidRectangle");
 //		solidRectangle(4);
 //		System.out.println("hollowRectangle");
@@ -29,8 +29,8 @@ public class Pattern {
 //		floydsTriangle(4);
 //		System.out.println("zeroOneTriangle");
 //		zeroOneTriangle(4);
-		System.out.println("butterflyPattern");
-		butterflyPattern(4);
+//		System.out.println("butterflyPattern");
+//		butterflyPattern(4);
 
 	}
 	
@@ -106,17 +106,17 @@ public class Pattern {
 	
 	public static void revartedLeftHalfPyramid(int n) {
 //	i
-//	0	**** space=0 = i, *=4=n-i total=n=4
-//	1	 *** space=1 = i, *=3=n-i total=n=4
-//	2	  ** space=2 = i, *=2=n-i total=n=4
-//	3	   * space=3 = i, *=1=n-i total=n=4
-		for(int i = 0; i<n; i++) {
+//	1	**** space=0 = i, *=4=n-i+1 total=n=4
+//	2	 *** space=1 = i, *=3=n-i+1 total=n=4
+//	3	  ** space=2 = i, *=2=n-i+1 total=n=4
+//	4	   * space=3 = i, *=1=n-i+1 total=n=4
+		for(int i = 1; i<=n; i++) {
 			//inner loop for space printing
-			for(int j = 1; j<=i;j++) {
+			for(int j = 1; j<i;j++) {
 				System.out.print(" ");
 			}
 			//inner loop for star printing
-			for(int j = 1; j<=n-i; j++ ) {
+			for(int j = 1; j<=n-i+1; j++ ) {
 				System.out.print("*");
 			}
 			System.out.println();
