@@ -29,7 +29,7 @@ public class Pattern {
 //		floydsTriangle(4);
 //		System.out.println("zeroOneTriangle");
 //		zeroOneTriangle(4);
-
+System.out.println("Bla bla bla");
 	}
 	
 	public static void rightHalfPyramid(int n) {
