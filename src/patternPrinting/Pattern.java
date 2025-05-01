@@ -27,8 +27,8 @@ public class Pattern {
 //		invertedRightHalfPyramidWithNumber(4);
 //		System.out.println("floydsTriangle");
 //		floydsTriangle(4);
-		System.out.println("zeroOneTriangle");
-		zeroOneTriangle(4);
+//		System.out.println("zeroOneTriangle");
+//		zeroOneTriangle(4);
 
 	}
 	
