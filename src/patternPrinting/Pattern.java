@@ -29,6 +29,8 @@ public class Pattern {
 //		floydsTriangle(4);
 //		System.out.println("zeroOneTriangle");
 //		zeroOneTriangle(4);
+		System.out.println("butterflyPattern");
+		butterflyPattern(4);
 
 	}
 	
@@ -270,7 +272,65 @@ public class Pattern {
 			
 		}
 	}
+	
+	private static void butterflyPattern(int n) {
+		// TODO Auto-generated method stub
+		
+//		*      *
+//		**    **
+//		***  ***
+//		********
+//		********
+//		***  ***
+//		**    **
+//		*      *
+//		
+//		logic written in resource.docs
+//		
+//		*      *
+//		**    **
+//		***  ***
+//		********
+		for(int i = 1; i<=n; i++) {
+			//1st part star print
+			for(int j = 1; j<=i; j++) {
+				System.out.print("*");
+			}
+			//space printing
+			for(int j = 1; j<=2*(n-i); j++) {
+				System.out.print(" ");
+			}
+			//2nd part of star
+			for(int j = 1; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+//		********
+//		***  ***
+//		**    **
+//		*      *
+		
+		//changing the outer loop logic just to print reverse
+		for(int i = n; i>=1; i--) {
+			//1st part star print
+			for(int j = 1; j<=i; j++) {
+				System.out.print("*");
+			}
+			//space printing
+			for(int j = 1; j<=2*(n-i); j++) {
+				System.out.print(" ");
+			}
+			//2nd part of star
+			for(int j = 1; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 
+	}
 
 }
 	
