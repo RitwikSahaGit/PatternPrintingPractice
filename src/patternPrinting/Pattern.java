@@ -386,6 +386,8 @@ public class Pattern {
 		System.out.println("After Swap a=" + a+ " b=" +b);
 		
 	}
+
+
 }
 	
 
