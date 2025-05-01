@@ -106,13 +106,13 @@ public class Pattern {
 	
 	public static void revartedLeftHalfPyramid(int n) {
 //	i
-//	1	**** space=0 = i, *=4=n-i+1 total=n=4
-//	2	 *** space=1 = i, *=3=n-i+1 total=n=4
-//	3	  ** space=2 = i, *=2=n-i+1 total=n=4
-//	4	   * space=3 = i, *=1=n-i+1 total=n=4
+//	1	**** space=0 = i-1, *=4=n-i+1 total=n=4
+//	2	 *** space=1 = i-1, *=3=n-i+1 total=n=4
+//	3	  ** space=2 = i-1, *=2=n-i+1 total=n=4
+//	4	   * space=3 = i-1, *=1=n-i+1 total=n=4
 		for(int i = 1; i<=n; i++) {
 			//inner loop for space printing
-			for(int j = 1; j<i;j++) {
+			for(int j = 1; j<=i-1;j++) {
 				System.out.print(" ");
 			}
 			//inner loop for star printing
