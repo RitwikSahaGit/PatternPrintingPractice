@@ -33,8 +33,10 @@ public class Pattern {
 //		butterflyPattern(4);
 //		System.out.println("Palindrom Check");
 //		palindrome(1234321);
-		System.out.println("fibbo");
-		fibbo(6);
+//		System.out.println("fibbo");
+//		fibbo(6);
+//		System.out.println("swapWithoutThirdVariable");
+//		swapWithoutThirdVariable(10,20);
 
 	}
 	
@@ -375,6 +377,15 @@ public class Pattern {
 		}
 	}
 
+	private static void swapWithoutThirdVariable(int a, int b) {
+		// TODO Auto-generated method stub
+		System.out.println("Before Swap a=" + a+ " b=" +b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("After Swap a=" + a+ " b=" +b);
+		
+	}
 }
 	
 
