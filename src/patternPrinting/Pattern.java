@@ -13,8 +13,8 @@ public class Pattern {
 //		invertedRightHalfPyramid(4);
 //		System.out.println("leftHalfPyramid");
 //		leftHalfPyramid(4);
-		System.out.println("revartedLeftHalfPyramid");
-		revartedLeftHalfPyramid(4);
+//		System.out.println("revartedLeftHalfPyramid");
+//		revartedLeftHalfPyramid(4);
 //		System.out.println("solidRectangle");
 //		solidRectangle(4);
 //		System.out.println("hollowRectangle");
@@ -31,6 +31,10 @@ public class Pattern {
 //		zeroOneTriangle(4);
 //		System.out.println("butterflyPattern");
 //		butterflyPattern(4);
+//		System.out.println("Palindrom Check");
+//		palindrome(1234321);
+		System.out.println("fibbo");
+		fibbo(6);
 
 	}
 	
@@ -330,6 +334,45 @@ public class Pattern {
 			System.out.println();
 		}
 
+	}
+
+	private static void palindrome(int number) {
+		// TODO Auto-generated method stub
+		int reverseNumber = 0;
+		int actualNumber = number;
+		while(number>0)
+		{
+			reverseNumber = (reverseNumber*10) + (number % 10);
+			number= number/10;
+		}
+		System.out.println("The reverse number is " + reverseNumber);
+		
+		if(reverseNumber == actualNumber) {
+			System.out.println("Palindrome");
+		}
+		else {
+			System.out.println("Not palindrome");
+		}
+	}
+
+	private static void fibbo(int limit) {
+		// TODO Auto-generated method stub
+		if(limit <= 2) {
+			System.out.println("Series is 0, 1");
+		}
+		else {
+			int a = 0, b=1, sum=0;
+			System.out.println("Series is following");
+			System.out.println(a);
+			System.out.println(b);
+			while(limit>0) {
+				sum = a + b;
+				a=b;
+				b=sum;
+				System.out.println(sum);
+				limit--;
+			}
+		}
 	}
 
 }
